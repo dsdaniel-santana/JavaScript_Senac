@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Callback</title>
+</head>
+<body>
+    <h1>Funções de callback em JavaScript?</h1>
+    <button id="meuBotao" onclick='fundoVerm()'>Alterar o fundo para vermelho</button>
+    <button id="meuBotao" onclick='fundoBranco()'>Alterar o fundo para Branco</button>
+    <br>
+    <button id="meuBotao" onclick='mostrarMensagem()'>Mensagem no alert</button>
+    <button id="meuBotao" onclick='msg()'>Mensagem na pagina</button>
+    
+
+    <script>
+        //função de callback que mostra uma mensagem na tela
+        function mostrarMensagem(){
+            alert('Que Aula Show! \n O professor é BOM');
+        }
+
+        function fundoVerm(){
+            document.bgColor = 'red';
+        }
+
+        function fundoBranco(){
+            document.bgColor = 'white';
+        }
+
+        function msg(){
+            document.write('<b>Adoro JavaScript</b>');
+        }
+    </script>
+    
+</body>
+</html>

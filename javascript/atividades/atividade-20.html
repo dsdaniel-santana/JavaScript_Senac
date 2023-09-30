@@ -1,0 +1,25 @@
+<script>
+
+    function porcentagemValores(a, b) {
+
+        //FUNÇÃO VOID
+        console.log('Calcular o percecentual');
+        document.write('Calcular o percecentual');
+
+        //FUNÇÃO DE MULTIPLICAÇÃO
+        return (a / 100) * b;
+    }
+
+    //SOLICITANDO VALORES PARA MULTIPLICAR    
+    a = parseInt(prompt('Digite um número inteiro que será o % ', ''));
+    b = parseInt(prompt(' Digite o valor que quer saber o %: ', ''));
+
+    //GUARDANDO RESULTADO DA MULTIPLICAÇÃO
+    let resultado = porcentagemValores(a, b);
+
+    //EXIBINDO RESULTDO
+    console.log(resultado);
+    document.write(('<br>'), a, '% de ', b, ' é: ', resultado);
+
+
+</script>

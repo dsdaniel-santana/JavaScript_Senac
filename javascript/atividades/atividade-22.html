@@ -1,0 +1,19 @@
+<script>
+    function met(){
+        document.write('<h1><b>Resultados </h1></b><br>');
+    }
+    met();
+
+    function calmet(){
+        let largura = parseFloat(prompt('Digite a Largura do terreno: ', ''));
+        let altura = parseFloat(prompt('Digite a altura do terreno:', ''));
+        let metq = parseFloat (largura * altura);
+
+        document.write('A Largura do terreno é: ', largura, ' metros');
+        document.write('<br>A Altura do terreno é: ', altura, ' metros');
+        return document.write('<br>A área do terreno é: ', metq, ' metros quadrados')
+
+
+    }
+    calmet();
+</script>

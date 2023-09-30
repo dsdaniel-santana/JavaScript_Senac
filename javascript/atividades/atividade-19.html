@@ -1,0 +1,63 @@
+<script>
+    alert('Seja bem vindo! \n Respoda as questões com o NÚMERO DA ALTERNATIVA CORRERTA.');
+
+    let p1 = parseInt(prompt('O que é HTML? \n 1)- Linguagem de marcação para estruturar conteúdo web. \n 2)- Linguagem de programação para aplicativos web.\n 3)- Software de design gráfico para logotipos. \n 4)- Linguagem de script para servidores web. '));
+    
+    let p2 = parseInt(prompt('Pergunta: O que é CSS? \n 1) Uma linguagem de programação para criar sites dinâmicos. \n 2) Um software de edição de imagens usado para design de websites. \n 3) Uma linguagem de marcação para estruturar conteúdo web. \n 4) Uma linguagem de estilo usada para controlar a aparência e o layout de páginas web.'));
+
+    let p3 = parseInt(prompt('Pergunta: O que é JavaScript? \n 1) Um sistema operacional para servidores web. \n 2) Uma linguagem de programação para automação de escritório. \n 3) Uma linguagem de marcação para estruturar documentos web.\n 4) Uma linguagem de programação utilizada para criar interatividade em páginas web.'))
+
+    
+    let p4 = parseInt(prompt(' Qual é o menor osso do corpo? \n 1) Estribo \n 2) Fíbia \n 3) Falange \n 4) Carpo'));
+
+    let p5 = parseInt(prompt('Em qual período pré-histórico o fogo foi descoberto? \n 1) Neolítico \n 2) Paleolítico \n 3) Idade Média  \n 4) Idade dos Metais'));
+   
+    let r1 = 0;
+    let r2 = 0;
+    let r3 = 0;
+    let r4 = 0;
+    let r5 = 0;
+
+    
+   
+
+    if(p1 == 1){
+        r1=1;
+        
+    }
+
+    if(p2 == 4){
+        r2=1;
+        
+    }
+    
+    if(p3 == 4){
+        r3=1;
+
+    }
+
+    if(p4 == 1){
+        r4=1;
+
+    }
+
+    if(p5 == 2){
+        r5=1;
+
+    }
+
+    let pontos = r1 + r2 + r3 + r4 +r5;
+
+ 
+
+    
+    document.write('Pergunta 1: <br> O que é HTML? <br>', 'Alternativa correta: 1', ' <br> Sua Resposta: ', p1,'<hr>');
+    document.write('Pergunta 2: <br> O que é CSS? <br>', 'Alternativa correta: 4', ' <br> Sua Resposta: ', p2,'<hr>');
+    document.write('Pergunta 3: <br> O que é JavaScript? <br>', 'Alternativa correta: 4', ' <br> Sua Resposta: ', p3,'<hr>');
+    document.write('Pergunta 4: <br> Qual é o menor osso do corpo?  <br>', 'Alternativa correta: 1', ' <br> Sua Resposta: ', p4,'<hr>');
+    document.write('Pergunta 5: <br> Em qual período pré-histórico o fogo foi descoberto?  <br>', 'Alternativa correta: 2', ' <br> Sua Resposta: ', p2,'<hr>');
+    document.write('Pontos: <font color=green>' + pontos + '</font>');
+
+
+
+</script>

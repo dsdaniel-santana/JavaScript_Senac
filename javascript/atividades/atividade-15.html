@@ -1,0 +1,15 @@
+<script>
+    let l1 = parseInt(prompt('Digite o valor de um lado para o triangulo: '));
+    let l2 = parseInt(prompt('Digite o valor de um lado para o triangulo: '));
+    let l3 = parseInt(prompt('Digite o valor de um lado para o triangulo: '));
+
+    if(l1 == l2 && l2 == l3 && l1 == l3){
+        document.write('Os 3 lados são iguais, o triangulo é equilátero')
+
+    } else if (l1 == l2 || l2 == l3 || l1 == l3) {
+        document.write('Os 2 lados são iguais, o triangulo é isósceles')
+    } else {
+        document.write('Os 3 lados são DIFERENTES, o triangulo é escaleno')
+    };
+    
+</script>

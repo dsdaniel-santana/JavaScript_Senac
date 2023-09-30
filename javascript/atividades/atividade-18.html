@@ -1,0 +1,31 @@
+<script>
+    let status = parseInt(prompt('Digite um número entre 1 e 4 para saber o status de seu chamado: ', ''));
+    let sit;
+    switch(status){
+        
+        case 1:
+        sit = 'Aberto';
+        break
+
+        case 2:
+        sit = 'Em Andamento';
+        break
+
+        case 3:
+        sit = 'Resolvido';
+        break
+
+        case 4:
+        sit = 'Fechado';
+        break
+
+        default:
+        sit = 'Número Desconhecido';
+
+    }
+
+    document.write('O numero digitado foi: ', + status);
+    document.write('<br> O status do chamado é: ' + sit);
+
+
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let primeiro = parseInt(prompt('Digite o primeiro número: ', '' ));
+    let op = (prompt('Escolha a Operação: \n Adição: + \n Subrtração: - \n Multiplicação: * \n Divisão: /'));
+    let segundo = parseInt(prompt('Digite o segundo número: ', '' ));
+    let resultado;
+    
+    switch(op){
+       case '+':
+       resultado = primeiro + segundo;
+       break;
+       case '-':
+       resultado = primeiro - segundo;
+       break;
+       case '*':
+       resultado = primeiro * segundo;
+       break;
+       case '/':
+       resultado = primeiro / segundo;
+       break;
+    }
+     document.write(resultado);
+     
+
+</script>

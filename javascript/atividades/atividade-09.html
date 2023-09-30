@@ -1,0 +1,18 @@
+<script>
+    //Crie um program que pede a idade de um usuário
+    //E verifica se ele é maior de 18 anos e se tem autorização dos pais.
+    //Se ammbas as condições forem verdadeiras exisba "Pode Entrar", caso contrário, exiba "Exiba não pode entrar"
+
+    let idade = prompt('Qual a sua idade: ', '');
+    let per = prompt('Tem autorização dos pais? (sim ou não): ', '');
+
+    if(idade >=18 && per === 'sim'){
+        document.write('Idade: ' + '<b>'+ idade +'</b>');
+        document.write('<br><b><font color = blue>Pode entrar</font></b>' );
+    }else{
+        document.write('Idade: ' + '<b>'+ idade +'</b>');
+        document.write('<br><b><font color = red> NÃO pode entrar </font></b>' );
+    }
+
+
+</script>

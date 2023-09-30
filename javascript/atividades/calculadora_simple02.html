@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples em JS</title>
+</head>
+<body>
+    <h1>Calculadora Simples 02</h1>
+    
+    <!-- Campos de entrada para os números -->
+    <input type='text' id='numero1' placeholder='Número 1'>
+    <input type='text' id='numero2' placeholder='Número 2'>
+    <button onclick='calcularOperacoes()'>Calcular</button>
+
+    <p>Resultado:</p>
+    <div id='resultado'></div>
+
+    <script>
+        function calcularOperacoes(){
+            //obter os valores dos comapos e converter em números
+            let num1 = parseFloat (document.getElementById('numero1').value);
+            let num2 = parseFloat (document.getElementById('numero2').value);
+
+            //verificar se os valores são válidos (números)
+            if (parseFloat(num1) && parseFloat(num2)){
+                //calcular as operações
+                let soma = num1 + num2;
+                let subtracao = num1 - num2;
+                let multiplicacao = num1 * num2;
+                let divisao = num1 / num2;
+
+                //Construir uma string com os resultados
+                let resultados = 'Soma: '+ soma + '<br>';
+                resultados += 'Subtração: ' + subtracao + '<br>';
+                resultados += 'Multiplicação: ' + multiplicacao + '<br>';
+                resultados += 'Divisão: ' + divisao;
+
+                document.getElementById('resultado').innerHTML = resultados;
+            }else{
+                //se um dos valores não for válido, exibir uma mensagem de erro
+                document.getElementById('resultado').innerHTML = 'Entrada inválida';
+            }
+        }
+    </script>
+</body>
+</html>
