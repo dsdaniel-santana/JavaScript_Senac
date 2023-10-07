@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de DOM Com JS - Contador</title>
+    <style>
+        .estilo {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .est {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .visor {
+            text-align: center;
+            width: 280px;
+            height: 30px;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin: 0 auto;
+        }
+        .dit {
+            align-items: center;
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="estilo">
+        <h1>Manipulação de DOM com JavaScript</h1>
+    </div>
+
+    <div class="dit">
+    <h2><b>Contador: <span id="contador">0</span></b></h2>
+
+    <input class="visor" type="text" id="apenas_numeros" value="0" readonly>
+
+    <br><br>
+
+    <button id="in" class="est" type="button" onclick="incremento()">Incremento</button>
+    <button id="de" class="est" type="button" onclick="decremento()">Decremento</button>
+    </div>
+    <h2><b>Desenvolvedor: Daniel Santana</b></h2>
+
+    <script>
+        let numero = 0;
+
+        function incremento() {
+            numero++;
+            document.getElementById('contador').textContent = numero;
+            document.getElementById('apenas_numeros').value = numero;
+        }
+
+        function decremento() {
+            numero--;
+            document.getElementById('contador').textContent = numero;
+            document.getElementById('apenas_numeros').value = numero;
+        }
+    </script>
+</body>
+</html>

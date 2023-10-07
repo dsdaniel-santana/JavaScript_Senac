@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        alert('Escolha a Sua categoria Preferida e veja as recomendações abaixo!');
+        let recomenda = parseInt(prompt('Escolha Uma Categoria para o momento:  \n 1 - Ação \n 2 - Ficção \n 3 - Comedia'));
+
+
+        switch (recomenda) {
+            case 1:
+                document.write('Perfeito a categoria: <font color=green>AÇÃO</font> é perfeita para sentir aquela emoção e ficar com aquele gostinho de quero mais.. <br>' );
+                document.write('<br> <b>Filme:</b> <font color=blue> Uncharted: Fora do Mapa </font>. <img src="imagens/filme_01.jpeg" width= 90px  > ');
+                document.write('<br> <b>Série:</b> <font color = blue>Invasão Secreta</font>. <img src="imagens/serie_01.jpg" width= 90px  >  ');
+                document.write('<br> <b>Anime:</b> <font color = blue>Jujutsu Kaisen</font>. <img src="imagens/juju.jpeg" width= 90px  >  ');
+               
+                break;
+                case 2: 
+                document.write('Perfeito a categoria: <font color=green>FICÇÃO</font>  é perfeita para colocar nossa criatividade e nosso lado cientista na ativa e tambem com aquele desejo de saber "E se acontecer?" <br>' );
+                document.write('<br> <b>Filme:</b> <font color=blue> Jogador Nº 1 </font>.      <img src="imagens/filme_02.jpeg" width= 90px  > ');
+                document.write('<br> <b>Série:</b> <font color = blue>Supervalentes</font>.    <img src="imagens/serie_02.jpg" width= 90px  >  ');
+                document.write('<br> <b>Anime:</b> <font color = blue>CyberPunk</font>.     <img src="imagens/anime_02.jpeg" width= 90px  >  ');
+                break;
+                case 3:
+                document.write('Perfeito a categoria: <font color=green>COMEDIA</font> é perfeita para aquela emoção e ficar com aquele gostinho de quero mais.. <br>' );
+                document.write('<br> <b>Filme:</b> <font color=blue> Doze É de mais </font>. <img src="imagens/filme_03.jpeg" width= 90px  > ');
+                document.write('<br> <b>Série:</b> <font color = blue>Sex Education</font>. <img src="imagens/serie_03.jpg" width= 90px  >  ');
+                document.write('<br> <b>Anime:</b> <font color = blue>Zom 100</font>. <img src="imagens/anime_03.jpg" width= 90px  >  ');
+                break;
+                default:
+
+            alert('Ainda não trabalhamos com essa opção!')
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
